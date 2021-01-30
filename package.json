@@ -5,21 +5,21 @@
     "main": "src/Client.js",
     "author": "KunoichiZ",
     "license": "Apache-2.0",
+    "type": "module",
     "private": true,
     "scripts": {
       "start": "node src/Client.js"
     },
     "dependencies": {
-      "@sapphire/decorators": "^1.0.2",
-      "@sapphire/framework": "github:sapphire-project/framework#build",
-      "@sapphire/utilities": "^1.1.1",
-      "discord.js": "^12.4.1",
-      "module-alias": "^2.2.2",
+      "@sapphire/decorators": "^2.0.3",
+      "@sapphire/framework": "^1.0.0-alpha.4",
+      "@sapphire/utilities": "^1.4.4",
+      "discord.js": "^12.5.1",
       "reflect-metadata": "^0.1.13"
     },
-    "_moduleAliases": {
-      "@utils": "lib/util",
-      "@lib": "lib",
-      "@root": "src"
+    "imports": {
+      "#lib/*": "./src/lib/*.js",
+      "#root/*": "./src/*.js",
+      "#utils/*": "./src/lib/util/*.js"
     }
   }
