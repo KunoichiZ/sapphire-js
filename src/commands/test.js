@@ -1,6 +1,6 @@
-const { Command } = require('@sapphire/framework');
+import { Command } from '@sapphire/framework';
 
-module.exports = class TestCommand extends Command {
+export default class TestCommand extends Command {
     constructor(context) {
         super(context, { 
             aliases: ['t'] 
